@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Bramati Technology ‚Äî Prenota il tuo slot</title>
+<title>Bramati Technology — Prenota il tuo slot</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -32,7 +32,7 @@
     scroll-behavior: smooth;
   }
 
-  /* ‚Äî FLOATING DECORATIONS ‚Äî */
+  /* — FLOATING DECORATIONS — */
   .float-deco {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -159,7 +159,7 @@
     opacity: .35;
   }
 
-  /* ‚Äî HEADER ‚Äî */
+  /* — HEADER — */
   header {
     display: flex;
     align-items: center;
@@ -209,7 +209,7 @@
   }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 
-  /* ‚Äî HERO ‚Äî */
+  /* — HERO — */
   .hero {
     padding: 80px 40px 60px;
     max-width: 760px;
@@ -254,7 +254,7 @@
     line-height: 1.7;
   }
 
-  /* ‚Äî BOOKING CONTAINER ‚Äî */
+  /* — BOOKING CONTAINER — */
   .booking-wrap {
     padding: 0 40px 80px;
     display: grid;
@@ -263,7 +263,7 @@
     max-width: 1100px;
   }
 
-  /* ‚Äî STEPS ‚Äî */
+  /* — STEPS — */
   .steps-label {
     font-size: .68rem;
     letter-spacing: .2em;
@@ -272,7 +272,7 @@
     margin-bottom: 28px;
   }
 
-  /* ‚Äî SERVICE CARDS ‚Äî */
+  /* — SERVICE CARDS — */
   .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -341,7 +341,7 @@
   }
   .service-card.selected .service-check { display: flex; }
 
-  /* ‚Äî CALENDAR ‚Äî */
+  /* — CALENDAR — */
   .calendar-wrap {
     background: var(--steel);
     border: 1px solid var(--iron);
@@ -413,7 +413,7 @@
   .cal-day.disabled { color: #444; cursor: default; }
   .cal-day.empty { cursor: default; }
 
-  /* ‚Äî TIME SLOTS ‚Äî */
+  /* — TIME SLOTS — */
   .slots-grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -436,7 +436,7 @@
   .slot.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
   .slot.taken { color: #444; cursor: default; text-decoration: line-through; }
 
-  /* ‚Äî FORM ‚Äî */
+  /* — FORM — */
   .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -486,7 +486,7 @@
   .submit-btn:hover { background: #e64a19; transform: translateY(-1px); }
   .submit-btn:disabled { background: var(--iron); color: var(--muted); cursor: not-allowed; transform: none; }
 
-  /* ‚Äî SUMMARY PANEL ‚Äî */
+  /* — SUMMARY PANEL — */
   .summary-panel {
     background: var(--steel);
     border: 1px solid var(--iron);
@@ -541,7 +541,7 @@
   }
   .summary-info-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
 
-  /* ‚Äî SUCCESS ‚Äî */
+  /* — SUCCESS — */
   .success-overlay {
     display: none;
     position: fixed; inset: 0;
@@ -580,7 +580,7 @@
     cursor: pointer;
   }
 
-  /* ‚Äî BIO INFO BANNER ‚Äî */
+  /* — BIO INFO BANNER — */
   .bio-info-banner {
     display: flex;
     gap: 20px;
@@ -639,7 +639,7 @@
     .nav-btn { padding: 6px 10px; font-size: .68rem; }
   }
   /* ============================================
-     RESPONSIVE ‚Äî tutti i dispositivi
+     RESPONSIVE — tutti i dispositivi
      ============================================ */
 
   /* TABLET (820px) */
@@ -716,7 +716,7 @@
     .hero h1 { font-size: 7rem; }
   }
 
-  /* TOUCH DEVICE ‚Äî aumenta aree cliccabili */
+  /* TOUCH DEVICE — aumenta aree cliccabili */
   @media (hover: none) and (pointer: coarse) {
     .cal-day { min-height: 40px; }
     .slot { min-height: 48px; }
@@ -733,11 +733,11 @@
 <header>
   <div class="logo">
     <span class="logo-main">Bramati Technology</span>
-    <span class="logo-sub" id="headerSub">Ciclo¬∑Officina ‚Äî Prenotazioni</span>
+    <span class="logo-sub" id="headerSub">Ciclo·Officina — Prenotazioni</span>
   </div>
   <nav class="page-nav">
-    <button class="nav-btn active" id="navCiclo" onclick="switchPage('ciclo')">üö≤ Ciclofficina</button>
-    <button class="nav-btn" id="navBio" onclick="switchPage('bio')">ü¶µ Biomeccanica</button>
+    <button class="nav-btn active" id="navCiclo" onclick="switchPage('ciclo')">🚲 Ciclofficina</button>
+    <button class="nav-btn" id="navBio" onclick="switchPage('bio')">🦵 Biomeccanica</button>
   </nav>
 </header>
 
@@ -752,48 +752,48 @@
   <!-- LEFT COLUMN -->
   <div>
     <!-- STEP 1: SERVICE -->
-    <div class="steps-label">01 ‚Äî Seleziona il servizio</div>
+    <div class="steps-label">01 — Seleziona il servizio</div>
     <div class="services-grid" id="servicesGrid">
       <div class="service-card" data-service="Tagliando completo" data-duration="90 min" onclick="selectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üîß</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🔧</div>
         <div class="service-name">Tagliando completo</div>
       </div>
       <div class="service-card" data-service="Cambio gomme" data-duration="15 min" onclick="selectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üö≤</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🚲</div>
         <div class="service-name">Cambio gomme</div>
       </div>
       <div class="service-card" data-service="Spurgo freni" data-duration="45 min" onclick="selectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">‚öôÔ∏è</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">⚙️</div>
         <div class="service-name">Spurgo freni</div>
       </div>
       <div class="service-card" data-service="E-Bike diagnostica" data-duration="60 min" onclick="selectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">‚ö°</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">⚡</div>
         <div class="service-name">E-Bike diagnostica</div>
       </div>
       <div class="service-card" data-service="Assemblaggio bici" data-duration="120 min" onclick="selectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üõ†Ô∏è</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🛠️</div>
         <div class="service-name">Assemblaggio bici</div>
       </div>
       <div class="service-card" data-service="Lavaggio e oliaggio" data-duration="40 min" onclick="selectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üß¥</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🧴</div>
         <div class="service-name">Lavaggio e oliaggio</div>
       </div>
     </div>
 
     <!-- STEP 2: CALENDAR -->
-    <div class="steps-label">02 ‚Äî Scegli la data</div>
+    <div class="steps-label">02 — Scegli la data</div>
     <div class="calendar-wrap">
       <div class="cal-header">
-        <div class="cal-title" id="calTitle">‚Äî</div>
+        <div class="cal-title" id="calTitle">—</div>
         <div class="cal-nav">
-          <button class="cal-btn" onclick="changeMonth(-1)">‚Äπ</button>
-          <button class="cal-btn" onclick="changeMonth(1)">‚Ä∫</button>
+          <button class="cal-btn" onclick="changeMonth(-1)">‹</button>
+          <button class="cal-btn" onclick="changeMonth(1)">›</button>
         </div>
       </div>
       <div class="cal-days-head">
@@ -806,11 +806,11 @@
     </div>
 
     <!-- STEP 3: SLOTS -->
-    <div class="steps-label" id="slotsLabel" style="display:none">03 ‚Äî Scegli l'orario</div>
+    <div class="steps-label" id="slotsLabel" style="display:none">03 — Scegli l'orario</div>
     <div class="slots-grid" id="slotsGrid"></div>
 
     <!-- STEP 4: FORM -->
-    <div class="steps-label">04 ‚Äî I tuoi dati</div>
+    <div class="steps-label">04 — I tuoi dati</div>
     <div class="form-row">
       <div class="field"><label>Nome</label><input type="text" id="inputNome" placeholder="Mario" oninput="updateSummary()"></div>
       <div class="field"><label>Cognome</label><input type="text" id="inputCognome" placeholder="Rossi" oninput="updateSummary()"></div>
@@ -822,7 +822,7 @@
     <div class="field" style="margin-bottom:14px">
       <label>Tipo di bici</label>
       <select id="inputBici" onchange="updateSummary()">
-        <option value="">‚Äî seleziona ‚Äî</option>
+        <option value="">— seleziona —</option>
         <option>MTB</option>
         <option>Road / Corsa</option>
         <option>Gravel</option>
@@ -858,16 +858,16 @@
       <div class="summary-divider"></div>
       <div class="summary-row">
         <div class="summary-key">Cliente</div>
-        <div class="summary-val summary-empty" id="sumName">‚Äî</div>
+        <div class="summary-val summary-empty" id="sumName">—</div>
       </div>
       <div class="summary-row">
         <div class="summary-key">Tipo bici</div>
-        <div class="summary-val summary-empty" id="sumBike">‚Äî</div>
+        <div class="summary-val summary-empty" id="sumBike">—</div>
       </div>
       <div class="summary-divider"></div>
       <div class="summary-info">
-        <div class="summary-info-icon">üìç</div>
-        <div>Via Roma 11, 36066 Sandrigo (VI)<br>Lun‚ÄìVen: 13:00‚Äì18:00</div>
+        <div class="summary-info-icon">📍</div>
+        <div>Via Roma 11, 36066 Sandrigo (VI)<br>Lun–Ven: 13:00–18:00</div>
       </div>
     </div>
   </div>
@@ -884,20 +884,20 @@
 </div>
 
 <div class="bio-info-banner">
-  <div class="bio-info-icon">üìã</div>
+  <div class="bio-info-icon">📋</div>
   <div class="bio-info-content">
     <div class="bio-info-title">Cosa portare alla seduta</div>
     <div class="bio-info-items">
       <div class="bio-info-item">
-        <span class="bio-info-emoji">üö≤</span>
+        <span class="bio-info-emoji">🚲</span>
         <span>La <strong>bici</strong> che vuoi mettere in misura</span>
       </div>
       <div class="bio-info-item">
-        <span class="bio-info-emoji">ü©±</span>
+        <span class="bio-info-emoji">🩱</span>
         <span><strong>Abbigliamento da ciclismo</strong> adatto per pedalare</span>
       </div>
       <div class="bio-info-item">
-        <span class="bio-info-emoji">üëü</span>
+        <span class="bio-info-emoji">👟</span>
         <span>Le tue <strong>scarpe da bici</strong></span>
       </div>
     </div>
@@ -906,57 +906,57 @@
 
 <div class="booking-wrap">
   <div>
-    <div class="steps-label">01 ‚Äî Seleziona il servizio</div>
+    <div class="steps-label">01 — Seleziona il servizio</div>
     <div class="services-grid" id="bioServicesGrid">
       <div class="service-card" data-service="Test biomeccanici" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">ü¶µ</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🦵</div>
         <div class="service-name">Test biomeccanici</div>
       </div>
       <div class="service-card" data-service="Test Conconi" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üìà</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">📈</div>
         <div class="service-name">Test Conconi</div>
       </div>
       <div class="service-card" data-service="Preparazioni personalizzate" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üéØ</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🎯</div>
         <div class="service-name">Preparazioni personalizzate</div>
       </div>
       <div class="service-card" data-service="Analisi corporea" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üßç</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🧍</div>
         <div class="service-name">Analisi corporea</div>
       </div>
       <div class="service-card" data-service="Analisi della pedalata" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üö¥</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">🚴</div>
         <div class="service-name">Analisi della pedalata</div>
       </div>
       <div class="service-card" data-service="Test potenza" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">‚ö°</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">⚡</div>
         <div class="service-name">Test potenza</div>
       </div>
       <div class="service-card" data-service="Plantari" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üëü</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">👟</div>
         <div class="service-name">Plantari</div>
       </div>
       <div class="service-card" data-service="Consulenza tecnica" data-duration="" onclick="bioSelectService(this)">
-        <div class="service-check">‚úì</div>
-        <div class="service-icon">üí¨</div>
+        <div class="service-check">✓</div>
+        <div class="service-icon">💬</div>
         <div class="service-name">Consulenza tecnica</div>
       </div>
     </div>
 
-    <div class="steps-label">02 ‚Äî Scegli la data</div>
+    <div class="steps-label">02 — Scegli la data</div>
     <div class="calendar-wrap">
       <div class="cal-header">
-        <div class="cal-title" id="bioCalTitle">‚Äî</div>
+        <div class="cal-title" id="bioCalTitle">—</div>
         <div class="cal-nav">
-          <button class="cal-btn" onclick="bioChangeMonth(-1)">‚Äπ</button>
-          <button class="cal-btn" onclick="bioChangeMonth(1)">‚Ä∫</button>
+          <button class="cal-btn" onclick="bioChangeMonth(-1)">‹</button>
+          <button class="cal-btn" onclick="bioChangeMonth(1)">›</button>
         </div>
       </div>
       <div class="cal-days-head">
@@ -968,10 +968,10 @@
       <div class="cal-days" id="bioCalDays"></div>
     </div>
 
-    <div class="steps-label" id="bioSlotsLabel" style="display:none">03 ‚Äî Scegli l'orario</div>
+    <div class="steps-label" id="bioSlotsLabel" style="display:none">03 — Scegli l'orario</div>
     <div class="slots-grid" id="bioSlotsGrid"></div>
 
-    <div class="steps-label">04 ‚Äî I tuoi dati</div>
+    <div class="steps-label">04 — I tuoi dati</div>
     <div class="form-row">
       <div class="field"><label>Nome</label><input type="text" id="bioNome" placeholder="Mario" oninput="bioUpdateSummary()"></div>
       <div class="field"><label>Cognome</label><input type="text" id="bioCognome" placeholder="Rossi" oninput="bioUpdateSummary()"></div>
@@ -983,7 +983,7 @@
     <div class="field" style="margin-bottom:14px">
       <label>Tipo di bici</label>
       <select id="bioBici" onchange="bioUpdateSummary()">
-        <option value="">‚Äî seleziona ‚Äî</option>
+        <option value="">— seleziona —</option>
         <option>MTB</option>
         <option>Road / Corsa</option>
         <option>Gravel</option>
@@ -1019,16 +1019,16 @@
       <div class="summary-divider"></div>
       <div class="summary-row">
         <div class="summary-key">Cliente</div>
-        <div class="summary-val summary-empty" id="bioSumName">‚Äî</div>
+        <div class="summary-val summary-empty" id="bioSumName">—</div>
       </div>
       <div class="summary-row">
         <div class="summary-key">Tipo bici</div>
-        <div class="summary-val summary-empty" id="bioSumBike">‚Äî</div>
+        <div class="summary-val summary-empty" id="bioSumBike">—</div>
       </div>
       <div class="summary-divider"></div>
       <div class="summary-info">
-        <div class="summary-info-icon">üìç</div>
-        <div>Via Roma 11, 36066 Sandrigo (VI)<br>Lun‚ÄìVen: 13:00‚Äì18:00</div>
+        <div class="summary-info-icon">📍</div>
+        <div>Via Roma 11, 36066 Sandrigo (VI)<br>Lun–Ven: 13:00–18:00</div>
       </div>
     </div>
   </div>
@@ -1037,13 +1037,13 @@
 
 <!-- SUCCESS BIO -->
 <div class="success-overlay" id="bioSuccessOverlay">
-  <div class="success-icon">‚úÖ</div>
+  <div class="success-icon">✅</div>
   <h2>Prenotazione confermata!</h2>
   <p id="bioSuccessMsg">Ci vediamo presto. Riceverai una conferma al tuo numero di telefono.</p>
   <button class="back-btn" onclick="bioResetAll()">Prenota un altro slot</button>
 </div>
 <div class="success-overlay" id="successOverlay">
-  <div class="success-icon">‚úÖ</div>
+  <div class="success-icon">✅</div>
   <h2>Prenotazione confermata!</h2>
   <p id="successMsg">Ci vediamo presto in officina. Riceverai una conferma al tuo numero di telefono.</p>
   <button class="back-btn" onclick="resetAll()">Prenota un altro slot</button>
@@ -1204,7 +1204,7 @@
   function updateSummary() {
     const set = (id, val, empty) => {
       const el = document.getElementById(id);
-      el.textContent = val || empty || '‚Äî';
+      el.textContent = val || empty || '—';
       el.classList.toggle('summary-empty', !val);
     };
 
@@ -1275,7 +1275,7 @@
     btn.textContent = 'CONFERMA PRENOTAZIONE';
     markSlotBooked(selectedDate, selectedTime, false);
     document.getElementById('successMsg').textContent =
-      `Ciao ${nome}${cog ? ' ' + cog : ''}! La tua prenotazione per "${servicesStr}" il ${formatDate(selectedDate)} alle ${selectedTime} √® stata ricevuta. Riceverai una conferma via email e troverai l'appuntamento nel tuo calendario.`;
+      `Ciao ${nome}${cog ? ' ' + cog : ''}! La tua prenotazione per "${servicesStr}" il ${formatDate(selectedDate)} alle ${selectedTime} è stata ricevuta. Riceverai una conferma via email e troverai l'appuntamento nel tuo calendario.`;
     document.getElementById('successOverlay').classList.add('show');
   }
 
@@ -1350,10 +1350,10 @@
         const bd = blockedData[dateStr];
         if (bd === 'all') {
           el.className = 'admin-day blocked';
-          el.title = 'Giornata intera bloccata ‚Äî clicca per modificare';
+          el.title = 'Giornata intera bloccata — clicca per modificare';
         } else if (Array.isArray(bd) && bd.length > 0) {
           el.className = 'admin-day partial';
-          el.title = `${bd.length} orari bloccati ‚Äî clicca per modificare`;
+          el.title = `${bd.length} orari bloccati — clicca per modificare`;
         } else {
           el.className = 'admin-day available';
           el.title = 'Clicca per gestire';
@@ -1379,7 +1379,7 @@
     const bd = blockedData[dateStr];
     const isFullDay = bd === 'all';
     // toggle full day button
-    document.getElementById('btnBlockFullDay').textContent = isFullDay ? '‚úì Giornata intera bloccata' : 'Blocca giornata intera';
+    document.getElementById('btnBlockFullDay').textContent = isFullDay ? '✓ Giornata intera bloccata' : 'Blocca giornata intera';
     document.getElementById('btnBlockFullDay').className = 'day-option-btn' + (isFullDay ? ' active' : '');
     // time slots
     const grid = document.getElementById('adminDayTimesGrid');
@@ -1577,7 +1577,7 @@
   function bioUpdateSummary() {
     const set = (id, val, empty) => {
       const el = document.getElementById(id);
-      el.textContent = val || empty || '‚Äî';
+      el.textContent = val || empty || '—';
       el.classList.toggle('summary-empty', !val);
     };
     set('bioSumService', bioSelectedServices.length ? bioSelectedServices.map(s => s.name).join(', ') : '', 'Non selezionato');
@@ -1617,7 +1617,7 @@
     } catch(e) { console.warn('Make Bio webhook error:', e); }
     btn.textContent = 'CONFERMA PRENOTAZIONE';
     markSlotBooked(bioSelectedDate, bioSelectedTime, true);
-    document.getElementById('bioSuccessMsg').textContent = `Ciao ${nome}${cog ? ' ' + cog : ''}! La tua prenotazione per "${servicesStr}" il ${formatDate(bioSelectedDate)} alle ${bioSelectedTime} √® stata ricevuta.`;
+    document.getElementById('bioSuccessMsg').textContent = `Ciao ${nome}${cog ? ' ' + cog : ''}! La tua prenotazione per "${servicesStr}" il ${formatDate(bioSelectedDate)} alle ${bioSelectedTime} è stata ricevuta.`;
     document.getElementById('bioSuccessOverlay').classList.add('show');
   }
 
@@ -1641,13 +1641,12 @@
     document.getElementById('footerBio').style.display = page === 'bio' ? '' : 'none';
     document.getElementById('navCiclo').classList.toggle('active', page === 'ciclo');
     document.getElementById('navBio').classList.toggle('active', page === 'bio');
-    document.getElementById('headerSub').textContent = page === 'ciclo' ? 'Ciclo¬∑Officina ‚Äî Prenotazioni' : 'Biomeccanica ‚Äî Prenotazioni';
+    document.getElementById('headerSub').textContent = page === 'ciclo' ? 'Ciclo·Officina — Prenotazioni' : 'Biomeccanica — Prenotazioni';
     if (page === 'bio') renderBioCalendar();
   }
 
   renderBioCalendar();
 </script>
-
 <!-- ADMIN LOGIN -->
 <div class="admin-login-overlay" id="adminLoginOverlay">
   <div class="admin-login-box">
@@ -1667,18 +1666,18 @@
   <div class="admin-panel-box">
     <div class="admin-panel-header">
       <div>
-        <div class="admin-panel-title">üóì Gestione Calendario</div>
-        <div class="admin-panel-sub">Clicca su un giorno per gestire disponibilit√†</div>
+        <div class="admin-panel-title">🗓 Gestione Calendario</div>
+        <div class="admin-panel-sub">Clicca su un giorno per gestire disponibilità</div>
       </div>
-      <button class="admin-close-btn" onclick="closeAdminPanel()">‚úï</button>
+      <button class="admin-close-btn" onclick="closeAdminPanel()">✕</button>
     </div>
 
     <div class="admin-cal-wrap">
       <div class="cal-header">
-        <div class="cal-title" id="adminCalTitle">‚Äî</div>
+        <div class="cal-title" id="adminCalTitle">—</div>
         <div class="cal-nav">
-          <button class="cal-btn" onclick="adminChangeMonth(-1)">‚Äπ</button>
-          <button class="cal-btn" onclick="adminChangeMonth(1)">‚Ä∫</button>
+          <button class="cal-btn" onclick="adminChangeMonth(-1)">‹</button>
+          <button class="cal-btn" onclick="adminChangeMonth(1)">›</button>
         </div>
       </div>
       <div class="cal-days-head">
@@ -1702,7 +1701,7 @@
       <div class="admin-divider"></div>
       <div class="admin-day-panel-header">
         <div>
-          <div class="admin-day-panel-title">üìÖ <span id="adminDayTitle">‚Äî</span></div>
+          <div class="admin-day-panel-title">📅 <span id="adminDayTitle">—</span></div>
           <div class="admin-panel-sub">Scegli cosa bloccare per questo giorno</div>
         </div>
         <button class="admin-clear-btn" onclick="clearDayBlock(adminSelectedDate)">Sblocca tutto</button>
@@ -1997,7 +1996,6 @@
   .admin-day.partial:hover { background: rgba(255,160,64,.08); }
   .admin-day.selected { outline: 2px solid #fff; outline-offset: 2px; }
   .legend-dot.partial { background: rgba(255,160,64,.2); border-color: var(--accent2); }
-
   .admin-day-panel-header {
     display: flex;
     justify-content: space-between;
@@ -2044,7 +2042,7 @@
 </style>
 
 <!-- ADMIN TRIGGER BUTTON -->
-<button class="admin-trigger" onclick="openAdminLogin()" title="Gestione calendario"><span>‚öôÔ∏è</span></button>
+<button class="admin-trigger" onclick="openAdminLogin()" title="Gestione calendario"><span>⚙️</span></button>
 
 
 
@@ -2195,12 +2193,12 @@
 <!-- CANCEL CONFIRM OVERLAY -->
 <div class="cancel-overlay" id="cancelOverlay">
   <div class="cancel-modal">
-    <div class="cancel-modal-icon">‚ö†Ô∏è</div>
+    <div class="cancel-modal-icon">⚠️</div>
     <div class="cancel-modal-title">Confermi l'annullamento?</div>
-    <div class="cancel-modal-body">Stai per annullare il tuo appuntamento. Questa azione √® irreversibile.<br><br>Se hai bisogno di spostare l'appuntamento ti consigliamo di contattarci direttamente su WhatsApp.</div>
+    <div class="cancel-modal-body">Stai per annullare il tuo appuntamento. Questa azione è irreversibile.<br><br>Se hai bisogno di spostare l'appuntamento ti consigliamo di contattarci direttamente su WhatsApp.</div>
     <div class="cancel-modal-btns">
       <button class="cancel-modal-no" onclick="closeCancelConfirm()">No, torna indietro</button>
-      <button class="cancel-modal-yes" onclick="confirmCancel()">S√¨, annulla</button>
+      <button class="cancel-modal-yes" onclick="confirmCancel()">Sì, annulla</button>
     </div>
   </div>
 </div>
@@ -2208,9 +2206,9 @@
 <!-- CANCEL SUCCESS OVERLAY -->
 <div class="cancel-overlay" id="cancelSuccessOverlay">
   <div class="cancel-modal">
-    <div class="cancel-modal-icon">‚úÖ</div>
+    <div class="cancel-modal-icon">✅</div>
     <div class="cancel-modal-title">Appuntamento annullato</div>
-    <div class="cancel-modal-body">Il tuo appuntamento √® stato annullato con successo. Se hai bisogno di una nuova prenotazione puoi farlo direttamente da questa pagina.</div>
+    <div class="cancel-modal-body">Il tuo appuntamento è stato annullato con successo. Se hai bisogno di una nuova prenotazione puoi farla direttamente da questa pagina.</div>
     <button class="cancel-modal-no" style="width:100%;margin-top:8px" onclick="closeCancelSuccess()">Chiudi</button>
   </div>
 </div>
@@ -2348,13 +2346,12 @@
     .cancel-inner { grid-template-columns: 1fr; gap: 32px; }
   }
 </style>
-
 <!-- FOOTER CICLO -->
 <footer id="footerCiclo">
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-logo">Bramati Technology</span>
-      <span class="footer-tagline">Ciclo¬∑Officina ‚Äî Sandrigo (VI)</span>
+      <span class="footer-tagline">Ciclo·Officina — Sandrigo (VI)</span>
     </div>
     <div class="footer-contacts">
       <a href="tel:+393349350147" class="footer-contact">
@@ -2385,7 +2382,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>¬© 2026 Bramati Technology ‚Äî Tutti i diritti riservati</span>
+    <span>© 2026 Bramati Technology — Tutti i diritti riservati</span>
   </div>
 </footer>
 
@@ -2394,7 +2391,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-logo">Bramati Technology</span>
-      <span class="footer-tagline">Biomeccanica ‚Äî Sandrigo (VI)</span>
+      <span class="footer-tagline">Biomeccanica — Sandrigo (VI)</span>
     </div>
     <div class="footer-contacts">
       <a href="tel:+393349350147" class="footer-contact">
@@ -2425,7 +2422,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>¬© 2026 Bramati Technology ‚Äî Tutti i diritti riservati</span>
+    <span>© 2026 Bramati Technology — Tutti i diritti riservati</span>
   </div>
 </footer>
 
